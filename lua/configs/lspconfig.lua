@@ -1,8 +1,8 @@
 -- 1. Load NvChad's underlying defaults
 require("nvchad.configs.lspconfig").defaults()
 
--- 2. Bulk enable your standard automatic language servers
-local servers = { "html", "cssls", "lua_ls" }
+-- 2. Bulk enable your standard automatic language servers (Added postgres_lsp)
+local servers = { "html", "cssls", "lua_ls", "harper_ls", "marksman", "postgres_lsp" }
 vim.lsp.enable(servers)
 
 -- 3. Directly boot Taplo on any .toml file with your custom configurations
