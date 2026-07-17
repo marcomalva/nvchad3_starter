@@ -15,7 +15,6 @@ vim.api.nvim_create_autocmd("FileType", {
       root_dir = vim.fs.root(args.buf, { "*.toml", ".git" }) or vim.fn.getcwd(),
       settings = {
         taplo = { include = { "**/*" } },
-        evenBetterToml = { schema = { enabled = true } },
       },
     }, { bufnr = args.buf })
   end,
