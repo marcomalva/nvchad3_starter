@@ -1,6 +1,7 @@
 local options = {
   formatters_by_ft = {
     lua = { "stylua" },
+    toml = { "taplo" }, -- Sets taplo as the formatter for TOML files
     -- css = { "prettier" },
     -- html = { "prettier" },
   },
